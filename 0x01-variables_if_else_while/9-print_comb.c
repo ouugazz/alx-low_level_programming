@@ -3,11 +3,12 @@
 /**
  * main - Entry point
  *
- * Description: print all possible different
- *		combinition of two digits.
+ * Description: print 0-9 using putchar
+ *		while using int variable
  *
  * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 	int digit1 = 0, digit2;

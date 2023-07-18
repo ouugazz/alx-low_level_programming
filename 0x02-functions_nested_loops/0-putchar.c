@@ -1,7 +1,9 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 
-int main(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
+int _putchar(char c);
+
+
+#endif

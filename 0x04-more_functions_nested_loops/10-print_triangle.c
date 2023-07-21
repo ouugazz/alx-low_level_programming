@@ -1,34 +1,31 @@
 #include "main.h"
 
 /**
- * print_triangle - func prints a triangle, using the character #.
- * @size: the size of the tri	ngle.
- */
+ * print_triangle - prints a triangle
+ *
+ * @size: size of the triangle
+ *
+ * Return: Always 0 (Success)
+*/
 
 void print_triangle(int size)
 {
-	int hash, index;
+	int hght, base;
 
-	if (size > 0)
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-		for (hash = 1; hash <= size; hash++)
+		for (hght = 1; hght <= size; hght++)
 		{
-			for (index = size - hash; index > 0; index--)
+			for (base = 1; base <= size; base++)
 			{
-				_putchar(' ');
+				if ((hght + base) <= size)
+					_putchar(' ');
+				else
+					_putchar('#');
 			}
-			for (index = 0; index < hash; index++)
-			{
-				_putchar('#');
-			}
-			if (hash == size)
-			{
-				continue;
-			}
-			_putchar('\n';
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
-
-	return (0);
 }
